@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Beers from "./pages/Beers";
 import SingleBeer from "./pages/SingleBeer";
 import RandomBeer from "./pages/RandomBeer";
+import NewBeer from "./pages/NewBeer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/beers" element={<Beers />} />
         <Route path="/beers/:id" element={<SingleBeer />} />
         <Route path="/beers/random" element={<RandomBeer />} />
+        <Route path="/beers/new" element={<NewBeer />} />
       </Routes>
     </div>
   );

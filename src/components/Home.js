@@ -29,7 +29,7 @@ function Home() {
         </p>
       </div>
       <div>
-        <Link className="Links-Home" to={"/new-beer"}>
+        <Link className="Links-Home" to={"/beers/new"}>
           {" "}
           <img src={newBeer} alt="new-beer" /> <h2>New Beer</h2>{" "}
         </Link>
