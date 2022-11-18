@@ -30,6 +30,9 @@ const SingleBeer = () => {
       <img src={oneBeer.image_url} alt={oneBeer.name} />
       <h2>{oneBeer.name}</h2>
       <p>{oneBeer.tagline}</p>
+      <p>{oneBeer.first_brewed}</p>
+      <p>{oneBeer.attenuation_level}</p>
+      <p>{oneBeer.description}</p>
       <p>{oneBeer.contributed_by}</p>
     </>
   ) : (

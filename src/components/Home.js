@@ -18,7 +18,7 @@ function Home() {
         </p>
       </div>
       <div>
-        <Link className="Links-Home" to={"/random-beer"}>
+        <Link className="Links-Home" to={"/beers/random"}>
           {" "}
           <img src={randomBeer} alt="random-beer" /> <h2>Random Beer</h2>{" "}
         </Link>
