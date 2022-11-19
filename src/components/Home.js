@@ -5,38 +5,52 @@ import newBeer from "../assets/new-beer.png";
 
 function Home() {
   return (
-    <div className="Home">
+    <div className="Home" style={{ textAlign: "left" }}>
       <div>
-        <Link className="Links-Home" to={"/beers"}>
-          {" "}
-          <img src={Beers} alt="beers" /> <h2>All beers</h2>{" "}
+        <img src={Beers} alt="beers" style={{ width: "390px" }} />
+        <Link
+          className="Links-Home"
+          to={"/beers"}
+          style={{
+            textDecoration: "none",
+            color: "black",
+            marginBottom: "none",
+            marginLeft: "50px",
+          }}
+        >
+          <h2>All beers</h2>
         </Link>
-        <p>
+        <p style={{ marginBottom: "50px", marginTop: "none" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          pharetra egestas lectus, sit amet eleifend ex tincidunt in. Nam dictum
-          arcu ut dignissim varius.
+          pharetra egestas lectus.
         </p>
       </div>
       <div>
-        <Link className="Links-Home" to={"/beers/random"}>
+        <Link
+          className="Links-Home"
+          to={"/beers/random"}
+          style={{ textDecoration: "none", color: "black" }}
+        >
           {" "}
           <img src={randomBeer} alt="random-beer" /> <h2>Random Beer</h2>{" "}
         </Link>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          pharetra egestas lectus, sit amet eleifend ex tincidunt in. Nam dictum
-          arcu ut dignissim varius.
+          pharetra egestas lectus.
         </p>
       </div>
       <div>
-        <Link className="Links-Home" to={"/beers/new"}>
+        <Link
+          className="Links-Home"
+          to={"/beers/new"}
+          style={{ textDecoration: "none", color: "black" }}
+        >
           {" "}
           <img src={newBeer} alt="new-beer" /> <h2>New Beer</h2>{" "}
         </Link>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          pharetra egestas lectus, sit amet eleifend ex tincidunt in. Nam dictum
-          arcu ut dignissim varius.
+          pharetra egestas lectus.
         </p>
       </div>
     </div>

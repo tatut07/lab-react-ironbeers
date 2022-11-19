@@ -26,13 +26,27 @@ const RandomBeer = () => {
   return oneRandomBeer ? (
     <>
       <Navbar />
-      <img src={oneRandomBeer.image_url} alt={oneRandomBeer.name} />
-      <h2>{oneRandomBeer.name}</h2>
-      <p>{oneRandomBeer.tagline}</p>
-      <p>{oneRandomBeer.first_brewed}</p>
-      <p>{oneRandomBeer.attenuation_level}</p>
-      <p>{oneRandomBeer.description}</p>
-      <p>{oneRandomBeer.contributed_by}</p>
+      <div style={{ textAlign: "center" }}>
+        <img
+          src={oneRandomBeer.image_url}
+          alt={oneRandomBeer.name}
+          style={{ height: "35vh" }}
+        />
+        <div className="details">
+          <div className="leftColumn">
+            <h2>{oneRandomBeer.name}</h2>
+            <p className="silverText">{oneRandomBeer.tagline}</p>
+          </div>
+          <div className="rightColumn">
+            <p className="silverText">{oneRandomBeer.attenuation_level}</p>
+            <p>{oneRandomBeer.first_brewed}</p>
+          </div>
+        </div>
+        <div className="description">
+          <p>{oneRandomBeer.description}</p>
+          <p className="silverText">{oneRandomBeer.contributed_by}</p>
+        </div>
+      </div>
     </>
   ) : (
     <h1>Loading...</h1>

@@ -28,12 +28,12 @@ const Beers = ({ beers }) => {
     <div>
       <Navbar />
       <div>
-        <h2>Search food</h2>
         <input
           value={filteredBeers}
           placeholder="Search for a beer"
-          tyye="text"
+          type="text"
           onChange={handleSearchInput}
+          className="searchBar"
         />
       </div>
       <div>
@@ -47,13 +47,19 @@ const Beers = ({ beers }) => {
             })
             .map((beer) => {
               return (
-                <div key={beer._id}>
-                  <img src={beer.image_url} alt={beer.name} />
-                  <Link to={`/beers/${beer._id}`}>
-                    <h2>{beer.name}</h2>
-                  </Link>
-                  <p>{beer.tagline}</p>
-                  <p>{beer.contributed_by}</p>
+                <div key={beer._id} className="oneBeer">
+                  <img
+                    src={beer.image_url}
+                    alt={beer.name}
+                    style={{ height: "25vh" }}
+                  />
+                  <div className="oneBeerText">
+                    <Link to={`/beers/${beer._id}`}>
+                      <h2>{beer.name}</h2>
+                    </Link>
+                    <p style={{ color: "lightgray" }}>{beer.tagline}</p>
+                    <p>{beer.contributed_by}</p>
+                  </div>
                 </div>
               );
             })

@@ -40,7 +40,7 @@ function NewBeer() {
     <div>
       <Navbar />
       <h3>Add new Beer</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="createBeer">
         <label>
           Name:
           <input
