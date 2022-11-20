@@ -32,7 +32,12 @@ function Home() {
           style={{ textDecoration: "none", color: "black" }}
         >
           {" "}
-          <img src={randomBeer} alt="random-beer" /> <h2>Random Beer</h2>{" "}
+          <img
+            src={randomBeer}
+            alt="random-beer"
+            style={{ width: "390px" }}
+          />{" "}
+          <h2>Random Beer</h2>{" "}
         </Link>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -46,7 +51,8 @@ function Home() {
           style={{ textDecoration: "none", color: "black" }}
         >
           {" "}
-          <img src={newBeer} alt="new-beer" /> <h2>New Beer</h2>{" "}
+          <img src={newBeer} alt="new-beer" style={{ width: "390px" }} />{" "}
+          <h2>New Beer</h2>{" "}
         </Link>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
